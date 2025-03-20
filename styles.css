@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(219, 214, 214);
+}
+.header{
+    display: flex;
+}
+.head1{
+    height: 40px;
+    width: 15%;
+    background-color: rgb(5, 114, 114);
+}
+.head2{
+    height: 40px;
+    width: 85%;
+    background-color: rgb(4, 138, 138);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+#svm{
+    margin-left: 50px;
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+}
+.top-icon{
+    color: white;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.date{
+    margin-right: 20px;
+}
+.mid{
+    display: flex;
+}
+.mid1{
+    height: 90px;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #01332f ;
+    color: white;
+}
+.profile-icon{
+    font-size: 50px;
+    margin-right: 8px;
+}
+.mid2{
+    height: 70px;
+    width: 85%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+    align-items: center;
+}
+#p1{
+    color: black;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.cap-icon{
+    font-size: 40px;
+}
+.home{
+    color: black;
+    margin-right: 70px;
+}
+.main{
+    display: flex;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 300px;
+}
+
+.contents {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.contents:hover {
+    background-color: #f9f9f9; /* Slightly lighter background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+.contents img {
+    width: 150px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.contents h3 {
+    font-size: 20px;
+    margin: 10px 0 0;
+}
+.contents a{
+    text-decoration: none;
+}

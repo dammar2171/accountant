@@ -1,0 +1,106 @@
+
+.container {
+    position: absolute;
+    top: 130px;
+    left: 15%;
+    width: 85%;
+    height: calc(100vh - 130px);
+    overflow-y: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+    background: #00897b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Form Styling */
+.fee-form {
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.row label {
+    width: 20%;
+    font-weight: bold;
+}
+
+.row input, .row select {
+    width: 30%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.save-btn {
+    width: 100%;
+    padding: 10px;
+    background: #00897b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background: #00695c;
+}
+
+/* Filter Section */
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+.filter-section label {
+    font-weight: bold;
+}
+
+.filter-section select {
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.view-btn {
+    background: #00897b;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.view-btn:hover {
+    background: #00695c;
+}
+
+/* No Records */
+.no-records {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}

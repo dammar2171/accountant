@@ -1,0 +1,228 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(219, 214, 214);
+    overflow: hidden; /* Prevent overall scrolling */
+}
+
+/* Fixed Header */
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 1000;
+}
+.head1 {
+    height: 40px;
+    width: 15%;
+    background-color: rgb(5, 114, 114);
+}
+#svm{
+    margin-left: 50px;
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+}
+
+.head2 {
+    width: 85%;
+    background-color: rgb(4, 138, 138);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 20px;
+}
+.top-icon{
+    color: white;
+    font-size: 30px;
+}
+
+/* Fixed Mid Section */
+.mid {
+    display: flex;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 999;
+}
+.mid1 {
+    width: 15%;
+    background-color: #01332f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid2 {
+    width: 85%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-icon{
+    font-size: 50px;
+    margin-right: 8px;
+}
+
+.cap-icon{
+    font-size: 40px;
+}
+#p1{
+    color: black;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.home{
+    color: black;
+    margin-right: 70px;
+}
+
+
+/* Fixed Sidebar */
+.sidebar {
+    position: fixed;
+    top: 130px;
+    left: 0;
+    width: 15%;
+    height: calc(100vh - 130px);
+    background-color: #012220;
+    color: white;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li {
+    padding: 13px 26px;
+    cursor: pointer;
+}
+.sidebar ul li:hover {
+    background-color: #004d40;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+/* Scrollable Container */
+.container {
+    position: absolute;
+    top: 130px;
+    left: 15%;
+    width: 85%;
+    height: calc(100vh - 130px);
+    overflow-y: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+hr{
+    background: #004d40;
+}
+
+/* Heading */
+h2 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+/* Search Input */
+.search-section input {
+    padding: 12px;
+    width: 50%;
+    border: 2px solid #00897b;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding-left: 15px;
+}
+
+/* Input focus effect */
+.search-section input:focus {
+    border-color: #00695c;
+    box-shadow: 0px 0px 8px rgba(0, 137, 123, 0.5);
+}
+
+/* Search Button */
+.search-btn {
+    padding: 12px 18px;
+    background: #00897b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Button Hover Effect */
+.search-btn:hover {
+    background: #00695c;
+    transform: scale(1.05);
+}
+
+/* Search Icon */
+.search-btn i {
+    font-size: 18px;
+}
+
+/* Table Styling */
+.bill-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.bill-table th, .bill-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.bill-table th {
+    background: #00897b;
+    color: white;
+}
+
+.bill-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.bill-table .pending {
+    color: red;
+    font-weight: bold;
+}
