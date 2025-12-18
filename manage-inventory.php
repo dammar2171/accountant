@@ -62,13 +62,13 @@ $result = $conn->query($sql);
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <style>
         .containerINV {
-            max-width: 1300px;
+            max-width: 1150px;
             background: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin: auto;
-            margin-top: 130px;
+            margin-top: 10rem;
             margin-left: 230px;
             max-height: 550px;
             overflow-y: auto;

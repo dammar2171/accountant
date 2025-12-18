@@ -39,44 +39,82 @@ $profile_pic = isset($user["profile_pic"]) && !empty($user["profile_pic"]) ? $us
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <style>
+        .mid2{
+            height:90px;
+        }
+
+/* Fixed Sidebar */
 .sidebar {
+    position: fixed;
+    top: 130px;
+    left: 0;
     width: 15%;
-    color: white;
+    height: calc(100vh - 130px);
     background-color: #012220;
-    height: 81vh; /* Makes the sidebar take full viewport height */
-    display: flex;
-    flex-direction: column; /* Align items in a column */
+    color: white;
+    padding-top: 20px;
+    overflow-y: auto;
 }
-
 .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    flex-grow: 1; /* Ensures items stretch properly */
+    list-style: none;
 }
-
 .sidebar ul li {
-    padding: 13px 26px;
+    padding: 12.5px 26px;
     cursor: pointer;
-    flex-grow: 1; /* Makes buttons grow to fit */
-    display: flex;
-    align-items: center;
 }
-
 .sidebar ul li:hover {
     background-color: #004d40;
 }
-
 .sidebar ul li a {
     text-decoration: none;
     color: white;
     display: block;
-    width: 100%;
 }
 
-.sidebar ul li a i {
-    padding: 8px;
+
+ /* Sidebar Styles */
+ .sidebar1 {
+    width: 200px;
+    height: 90vh;
+    background-color: #024e49;
+    color: white;
+    position: fixed;
+    left: 205px;
+    top: 120px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 }
-.profile-pic1 {
+
+.sidebar1 h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.sidebar1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar1 ul li {
+    padding: 4px;
+    margin: 10px 0;
+    margin-left: 10px;
+    width: 150px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar1 ul li:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+        .profile-pic1 {
             width: 80px;
             height: 80px;
             border-radius: 50%;
@@ -114,13 +152,10 @@ $profile_pic = isset($user["profile_pic"]) && !empty($user["profile_pic"]) ? $us
                 <li><a href="manage-expenses.php"><i class="bi bi-printer-fill"></i>Manage Expenses</a></li>
                 <li><a href="manage-debtor.php"><i class="bi bi-database-add"></i>Manage Debtors</a></li>
                 <li><a href="manage-inventory.php"><i class="bi bi-database-up"></i>Manage Inventory</a></li>
-                <li><a href="staff-payroll.php"><i class="bi bi-people-fill"></i>Staff Payrolls</a></li>
-                <li><a href="calender.php"><i class="bi bi-calendar-fill"></i>Calender</a></li>
-                <li><a href="password-reset.php"><i class="bi bi-key-fill"></i>Password Reset</a></li>
-                <li><a href="logout.php"><i class="bi bi-box-arrow-in-right"></i>Logout</a></li>
+                <li><a href="staff-payroll.php"><i class="bi bi-people-fill">Staff Payroll</i><li> <i class="bi bi-box-arrow-in-right"></i>Logout</a></li>
             </ul>
         </div>
-        <div class="content" style=" margin-left: 70px; margin-top: 40px;">
+        <div class="content" style=" margin-left: 15rem; margin-top: 40px;">
             <div class="contents"><a href="profile.php"><h3>My Profile</h3><br><img src="graduation.jpg" alt="profile"></a></div>
             <div class="contents"><a href="allocate-fee.php"><h3>Allocate Fee</h3><br><img src="money.jpg" alt="fee"></a></div>
             <div class="contents"><a href="fee-payment.php"><h3>Fee Payment</h3><br><img src="payment.webp" alt="payment"></a></div>

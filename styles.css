@@ -93,13 +93,13 @@ body{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px;
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    transition: all 0.3s ease; 
 }
 
 .contents:hover {
-    background-color: #f9f9f9; /* Slightly lighter background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More prominent shadow */
-    transform: scale(1.05); /* Slight scaling effect */
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
 
 .contents img {
@@ -115,4 +115,5 @@ body{
 }
 .contents a{
     text-decoration: none;
+  
 }

@@ -2,9 +2,9 @@
 session_start();
 // Database Connection
 $host = "localhost";
-$username = "root"; // Change this if using a different user
+$username = "root"; 
 $password = "";
-$database = "school_management"; // Change this to your database name
+$database = "school_management"; 
 
 $conn = new mysqli($host, $username, $password, $database);
 
